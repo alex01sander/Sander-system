@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/rh.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+div{
+    margin: auto;
+    
+}
+
+#login-principal{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#login-principal{
+    width: 900px;
+    height: 350px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+input#usuario, input#senha{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black none;
+    width: 50%;
+    border-radius: 20px;
+}
+
+input#entrar:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+input#entrar{
+    background-color: rgb(2, 2, 124);
+    width: 300px;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+}
+
+label{
+    font-size: 20px;
+}

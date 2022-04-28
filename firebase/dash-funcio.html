@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/telaPrincipal.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Sander System</title>
+</head>
+<body>
+    <button class="btnsair" id="logout">Logout</button>
+    <nav id="area-pricipal">
+        
+        <div id="info-diretor">
+            <img src="./image/diretor.jpg" alt="foto do diretor" id="funcio">
+            <p>Seja Bem vindo!</p>
+            <h1 id="nome-funcio"></h1>
+        </div>
+        
+    </nav>
+    <div id="nav-cadas">  
+        
+        <div id="fuc">
+            <img src="./image/funcionario.png" id="func-usuario" alt="cadastrar funcionario" onclick="usuariofaltas()">
+           <h2>Faltas/Atestados</h2>
+        </div>   
+        <div id="fuc">
+            <img src="./image/funcionario.png" id="func-usuario" alt="cadastrar funcionario" onclick="usuarioconvenio()">
+            <h2>Convênio e Contra-cheque</h2>
+        </div>   
+        
+    
+    </div>
+
+    <!------------------------------TELA OCULTA---------------------------->
+    <div id="hidden-usuario">
+        <input type="button" id="fechar" value="X" onclick="usuariofaltas()">
+        <H1>Faltas e Atestados</H1>
+        <table id="tabela">
+            <tr>
+              <th>Nome</th>
+              <th>Setor</th>
+              <th>Dia da Falta</th>
+              <th>Motivo</th>
+              <th>Atestado</th>
+            </tr>
+            <tr>
+              <td   id="nome">Alex</td>
+              <td id="setor">cpd</td>
+              <td id="dia">12/12</td>
+              <td id="motivo">doençad</td>
+              <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+            </tr>
+            <tr>
+                <td   id="nome">Alex</td>
+                <td id="setor">cpd</td>
+                <td id="dia">12/12</td>
+                <td id="motivo">doençad</td>
+                <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+            </tr>
+            <tr>
+                <td   id="nome">Alex</td>
+              <td id="setor">cpd</td>
+              <td id="dia">10/12</td>
+              <td id="motivo">doençad</td>
+              <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+            </tr>
+            <tr>
+                <td   id="nome">Alex</td>
+                <td id="setor">cpd</td>
+                <td id="dia">12/12</td>
+                <td id="motivo">doençad</td>
+                <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td id="motivo">doençad</td>
+                    <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+                </tr>
+            <tr>
+                <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td id="motivo">doençad</td>
+                    <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+                </tr>
+            <tr>
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td id="motivo">doençad</td>
+                    <td><a href='./image/atestado.txt' download><button>Atestado</button></td>
+                </tr>
+            <tr>    
+              
+        </table>
+    </div>
+    
+
+    <div id="hidden-usuario2">
+        <input type="button" id="fechar" value="X" onclick="usuarioconvenio()">
+        <h1>Convenio e Contra-cheque</h1>
+        <div id="limite-convenio">Limite do convenio R$800</div>
+        <table id="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Setor</th>
+                <th>Mes</th>
+                <th>Contra-cheque</th>
+            </tr>
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                  </tr>
+                <tr>
+            </tr>
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                  </tr>
+                  <tr>
+            </tr>
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>    
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>   
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>   
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>   
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>   
+            <tr>
+                <tr>
+                    <td   id="nome">Alex</td>
+                    <td id="setor">cpd</td>
+                    <td id="dia">12/12</td>
+                    <td><a href='./image/contracheque.txt' download><button>Contra-cheque</button></td>
+                </tr>
+            </tr>   
+        </table>
+    </div>
+        
+    
+    
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/adm.js"></script>
+    <script src="./script/logout.js"></script>
+</body>
+</html>

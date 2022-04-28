@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/telaPrincipal.css">
+    <title>Sander System</title>
+</head>
+<body>
+    <button class="btnsair" id="logout">Logout</button>
+    <nav id="area-pricipal">
+        
+        <div id="info-diretor">
+            <img src="./image/diretor.jpg" alt="foto do diretor" id="diretor">
+            <p>Olá Diretor!</p>
+            <h1>Alex Sander</h1>
+        </div>
+        
+    </nav>
+    <div id="nav-cadas">  
+        <div class="func" >
+            <img src="./image/funcionario.png" id="func-principal" alt="cadastrar funcionario" onclick="esconder()">
+            <h2>Cadastrar Funcionário</h2>
+        </div>   
+        <div id="fuc">
+            <img src="./image/funcionario.png" id="func-principal" alt="cadastrar funcionario" onclick="faltas()">
+           <h2>Faltas/Atestados</h2>
+        </div>   
+        <div id="fuc">
+            <img src="./image/funcionario.png" id="func-principal" alt="cadastrar funcionario" onclick="convenio()">
+            <h2>Convênio e Contra-cheque</h2>
+        </div>   
+        
+    
+    </div>
+
+<!-------------------------Tela oculta: Cadastrar Funionário--->
+<div class="cds-func" id="cad-hidden">
+    
+    <div>
+        <input type="button" id="fechar" value="X" onclick="esconder()">
+        <h1>Cadastrar Funcionário</h1>
+        
+    </div>
+        
+    <div >
+        <div class="cds-func">
+            <label for="Nome">Nome do Funcionário</label>
+            <input type="text" name="funcionario" id="btn-nome" placeholder="Nome completo...">
+            <div>
+                <label for="setores">Setores:</label>
+                <select name="Setor" id="setor">
+                    <option value="setor">Padaria</option>
+                    <option value="setor">Açougue</option>
+                    <option value="setor">P.A.S</option>
+                    <option value="setor">Loja</option>
+                    <option value="setor">Frente Caixa</option>
+                </select>
+                <label for="Ano do nascimento">Data de Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+                
+            <label for="email">Email do funcionario</label>
+            <input type="email" name="email" id="email-func" placeholder="Ex: funcionario@empresa.com">
+            <label for="senha">Senha do login (CPF)</label>
+            <input type="password" name="senha" id="senha-func" placeholder="Ex: Sem ifem ou barra">
+            <label for="telefone">Telefone do Funcionario</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Ex: (ddd) Numero">
+
+            <input type="button" id="cadastrar" value="Cadastrar" onclick="cadastrar()">
+        </div> 
+    </div>    
+    <div class="listra"><h1></h1></div>
+    <h1>Excluir Funcionario(a)</h1>
+    <div class="cds-func-s">
+        <label for="nome-func">Nome do Funcionario(a):</label>
+        <input type="text" name="exc-func" id="exc-func">
+        <label for="setores">Setores:</label>
+        <select name="Setor" id="setor">
+            <option value="setor">Padaria</option>
+            <option value="setor">Açougue</option>
+            <option value="setor">P.A.S</option>
+            <option value="setor">Loja</option>
+            <option value="setor">Frente Caixa</option>
+        </select>
+        
+        
+        <input type="button" id="excluir-cadastro" value="Descadastrar" onclick="cadastrar()">
+    </div>
+    
+</div>
+<!----------------------------------FIM TELA OCULTA CADASTRO FUNCIONARIO--------------------------->
+
+<!----------------------------------------- TELA OCULTA FALTAS E ATESTADOS--------------------------->
+<div id="faltas-hidden">
+    <input type="button" id="fechar" value="X" onclick="faltas()">
+    <h1>Faltas e  Atestados</h1>
+    <div id="faltas">
+        
+            <label>Nome do Funcionário:</label>
+                <input type="text" name="nome" id="nome-atest">
+            
+            <div>
+                <label>Dia da Falta:
+                    <input type="date" name="dia" id="dia">
+                </label>
+                <label>Setor:
+                    <select name="Setor" id="setor">    
+                        <option value="setor">Padaria</option>
+                        <option value="setor">Açougue</option>
+                        <option value="setor">P.A.S</option>
+                        <option value="setor">Loja</option>
+                        <option value="setor">Frente Caixa</option>
+                    </select>
+                </label>
+            </div>
+            <label>Motivo:</label>
+                <input type="text" name="motivo" id="motivo">
+            
+            <label>Anexar Atestado:
+                <input type="file" name="atestado" id="atestado" >
+            </label>
+            <input type="button" id="cadastro-faltas" value="Cadastrar" onclick="cadastrar()">
+    </div>
+</div>   
+<!-------------------------------FIM FALTAS E ATESTADOS--------------------------------->
+
+<!-------------------------------CONVENIO E CONTRA-CHEQUE--------------------------------->
+
+<div id="hidden-contra-cheque" >
+    <input type="button" id="fechar" value="X" onclick="convenio()">
+    <h1>Convênio e Contra-cheque</h1>
+    <div id="faltascontra">
+        <label>Nome do Funcionário</label>
+            <input type="text" name="nome-contra" id="nome-contra">
+        <label>Limite do Convênio</label>
+            <input type="number" name="convenio" id="convenio">
+        <div>
+            <label>Mês:
+                <input type="month" name="mes" id="mes">
+            </label>
+            <label>Setor:
+                <select name="Setor" id="setor">    
+                    <option value="setor">Padaria</option>
+                    <option value="setor">Açougue</option>
+                    <option value="setor">P.A.S</option>
+                    <option value="setor">Loja</option>
+                    <option value="setor">Frente Caixa</option>
+                </select>
+            </label>
+        </div>
+        
+        <label>Anexar Contra-cheque:
+            <input type="file" name="Contra-cheque" id="Contra-cheque" >
+        </label>
+        <input type="button" id="cadastro-contra-cheque" value="Cadastrar" onclick="cadastrar()">
+    </div>
+        
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="./script/app.js"></script>
+<script src="./script/adm.js"></script>
+<script src="./script/logout.js"></script>
+</body>
+</html>

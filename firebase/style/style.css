@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TELA OCULTA */
+#cad-hidden, #faltas-hidden, #hidden-contra-cheque, #hidden-usuario, #hidden-usuario2{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    color: white;
+}
+/* FIM TELA OCULTA */
+
+/* STYLE CADASTRO FUNCIONARIO */
+.listra{
+    background-color: white ;
+    width: 100%;
+    height: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.cds-func-s{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 20px;
+    gap: 10px;
+   
+}
+.cds-func, h1, p{
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+input#btn-nome, input#email-func, input#senha-func, input#telefone-func, input#telefone{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    width: 50%;
+    border-radius: 20px;
+}
+
+input#nascimento, select#setor{
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    
+}
+
+ #excluir-cadastro:hover{
+    background-color: black;
+    color: white;
+}
+
+#cadastrar:hover{
+    background-color: black;
+    color: white;
+}
+
+#cadastro-faltas:hover{
+    background-color: black;
+    color: white;
+}
+
+#cadastro-contra-cheque:hover{
+    background-color: black;
+    color: white;
+}
+
+input#fechar:hover{
+    transform: scale(1.03);
+   
+}   
+input#cadastrar{
+    margin-top: 20px;
+    border: 0;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input#excluir-cadastro, #cadastro-faltas, #cadastro-contra-cheque{
+    margin-left: 20px;
+    border: 0;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input#exc-func{
+    margin: 10px;
+    padding: 3px;
+    border: none;
+    width: 30%;
+    border-radius: 20px;
+    
+}
+
+input#fechar{
+    border: none;
+    border-radius: 100%;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* FIM STYLE CADASTRO*/
+
+/* STYLE FALTAS */
+
+#faltas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+label{
+    font-size: 18px;
+}
+
+input#motivo{
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    width: 500px;
+    height: 100px;
+}
+
+input#nome-atest{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 500px;
+    
+
+}
+
+input#setor, input#dia{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 20px;
+}
+
+h1{
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+/* FIM STYLE FALTAS */
+
+
+/* STYLE CONVENIO */
+
+#faltascontra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+input#nome-contra, input#convenio{
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    padding: 3px;
+}
+
+/* FIM STYLE CONVENIO */
+
+/* STYLE FALTAS E COVENIO USUARIO */
+
+
+th, td {
+    border: 1px solid rgb(253, 253, 253);
+    background-color:white;
+    color: black;
+    padding: 3px;
+    width: 160px;   
+    text-align: center; 
+    border-radius: 13PX;
+    
+
+}
+
+#tabela{
+    background-color: #1D1E1B;
+    width: 900px;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#limite-convenio{
+    margin:30px auto;
+    background-color: white;
+    color: black;
+    width: 300px;
+    text-align:center;
+    padding: 3px;     
+    border-radius: 10px;
+}
+
+#limite-convenio:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.10);
+
+}
+
+button{
+    border: none;
+    background-color: rgb(68, 68, 229);
+    border-radius:  10px;
+    color: white;
+    width: 150px;
+    height: 30px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(135, 135, 231);
+}
